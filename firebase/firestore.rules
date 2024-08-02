@@ -1,0 +1,46 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /chat_session/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /messages/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /popup_from_data/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /user_feedback/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /ad_management/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /user/{document} {
+      allow create: if request.auth.uid == document;
+      allow read: if request.auth.uid == document;
+      allow write: if request.auth.uid == document;
+      allow delete: if request.auth.uid == document;
+    }
+  }
+}

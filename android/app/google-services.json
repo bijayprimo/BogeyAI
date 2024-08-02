@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "411228406476",
+    "project_id": "golftower-2abea",
+    "storage_bucket": "golftower-2abea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:411228406476:android:148a2f0f08a2d966993869",
+        "android_client_info": {
+          "package_name": "com.mycompany.slammie"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-W01ylGO6M8kAwSPcmKjEzgv23wfMdNw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
